@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1, h2, h3, h4, h5, h6 {
+	/* I want all headings to share a font-family.
+	My h's will differ in most other ways, so I'll
+	only define a font-family here generally. */
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+	font-size: 200%;
+	background-color: #a2a2b4;
+	text-align: left;
+}
+
+h2 {
+	font-size: 175%;
+	background-color: #CCC;
+	text-align: left;
+}
+
+h3 {
+	font-size: 150%;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+h4 {
+	font-size: 125%;
+	font-style: italic;
+	color: #CCC;
+	text-align: right;
+	line-height: 200%;
+}
+
+h5 {
+	font-size: 115%;
+}
+
+
+p.PoemLine, li.PoemLine, div.PoemLine,
+p.PoemLineIndent1, li.PoemLineIndent1, div.PoemLineIndent1,
+p.PoemLineIndent2, li.PoemLineIndent2, div.PoemLineIndent2,
+p.PoemLineRightJ, li.PoemLineRightJ, div.PoemLineRightJ,
+p.PoemLineCenter, li.PoemLineCenter, div.PoemLineCenter { 
+/* I can group all of these PoemLine styles together, because
+all of my PoemLine classes use the same font-family etc. The 
+only difference among PoemLineXYZ classes is the padding-left 
+and text-align */
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-indent: -3%;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: normal;
+}
+
+p.PoemLine, li.PoemLine, div.PoemLine {
+	padding-left: 3%;
+	text-align: left;
+}
+
+p.PoemLineIndent1, li.PoemLineIndent1, div.PoemLineIndent1 {
+	padding-left: 6%;
+	text-align: left;
+}
+
+p.PoemLineIndent2, li.PoemLineIndent2, div.PoemLineIndent2 {
+	padding-left: 9%;
+	text-align: left;
+}
+
+p.PoemLineRightJ, li.PoemLineRightJ, div.PoemLineRightJ {
+	padding-left: 0; 
+	text-align: right;
+	/* In practice, it's rare for right justified lines to be very long
+	But just in case, they should still have a hanging LEFT indent 
+	in left-to-right languages. So, same text-indent as others */
+}
+
+p.PoemLineCenter, li.PoemLineCenter, div.PoemLineCenter {
+	padding-left: 0;
+	text-align: center;
+}
+
+/* The Stanza classes are the same as the Line classes, except the Stanza classes have a margin-top of 1em . Use them only for the first line of each stanza. -AM */
+
+p.PoemStanza, li.PoemStanza, div.PoemStanza,
+p.PoemStanzaIndent1, li.PoemStanzaIndent1, div.PoemStanzaIndent1,
+p.PoemStanzaIndent2, li.PoemStanzaIndent2, div.PoemStanzaIndent2,
+p.PoemStanzaRightJ, li.PoemStanzaRightJ, div.PoemStanzaRightJ,
+p.PoemStanzaCenter, li.PoemStanzaCenter, div.PoemStanzaCenter,
+p.ContentsSection, li.ContentsSection, div.ContentsSection {
+/* I can group all of these PoemStanza styles together, because
+all of my PoemStanza classes use the same font-family etc. The 
+only difference among PoemStanzaXYZ classes is the padding-left 
+and text-align */
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-indent: 0%;
+	margin-top: 2%;  /* this is the only change from regular .PoemLineXYZ */
+	margin-bottom: 0;
+	line-height: normal;
+}
+
+p.PoemStanza, li.PoemStanza, div.PoemStanza {
+	padding-left: 0%;
+	text-align: left;
+}
+
+p.PoemStanzaIndent1, li.PoemStanzaIndent1, div.PoemStanzaIndent1 {
+	padding-left: 3%;
+	text-align: left;
+}
+
+p.PoemStanzaIndent2, li.PoemStanzaIndent2, div.PoemStanzaIndent2 {
+	padding-left: 6%;
+	text-align: left;
+}
+
+p.PoemStanzaRightJ, li.PoemStanzaRightJ, div.PoemStanzaRightJ {
+	padding-left: 3%;
+	text-align: right;
+}
+
+p.PoemStanzaCenter, li.PoemStanzaCenter, div.PoemStanzaCenter {
+	padding-left: 0%;
+	text-align: center;
+}
+
+p.ContentsSection, li.ContentsSection, div.ContentsSection {
+	padding-left: 0%;
+	text-align: left;
+	background-color: #CCC; /* helps this line read better in Table of Contents */
+}
+
+p.PoemDedication, li.PoemDedication, div.PoemDedication {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	font-style: italic;
+	color: #7F7F7F;
+	padding-left: 3%;
+	text-indent: -3%;
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: normal;
+}
+
+p.prose, li.prose, div.prose {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-align: justify;
+	text-indent: 0;
+	line-height: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p.ProseStanza, li.ProseStanza, div.ProseStanza {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-align: justify;
+	text-indent: 0;
+	line-height: normal;
+	margin-top: 2%;
+}
+
+p.ProseSection, li.ProseSection, div.ProseSection {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-align: justify;
+	text-indent: 0;
+	line-height: normal;
+	margin-top: 2%;
+	page-break-before: always; /* This is the only difference for .ProseSection over .ProseStanza */
+}
+
+.Section {
+	page-break-before: always;
+}
+
+.offset-s {
+	padding-left: 15%;
+	text-align: left;
+}
+
+.ContributorName {
+	font-weight: 600;
+}
+
+.toc a {
+	display: block;
+}
+
+div.rush-x {
+	width: 100%;
+	margin-top: 2%;
+}
+img.rush-x {
+	display: inline;
+	width: 10%;
+	padding: 0;
+	margin: 0;
+}
