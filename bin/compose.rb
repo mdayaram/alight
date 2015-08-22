@@ -65,8 +65,7 @@ File.open(root_path("index.html"), "w") { |f| f.write(html_doc.to_html) }
 puts "Generating manifest file."
 SHA = `git log -n 1 --format="%h" -- #{CONTENT_DIR}`
 manifest = <<MANIFEST
-Generated on #{Time.now.to_s}
-Against #{SHA}
+Generated against #{SHA}
 Output From Kindlegen:
 MANIFEST
 File.open(root_path("manifest.txt"), "w") { |f| f.write(manifest) }
