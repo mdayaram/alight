@@ -61,3 +61,4 @@ File.open(root_path("manifest.txt"), "w") { |f| f.write(manifest) }
 # Generate Ebook
 system("#{bin_path("kindlegen")} #{root_path('index.html')} >> #{root_path("manifest.txt")} 2>&1")
 
+puts File.read(root_path("manifest.txt"))
