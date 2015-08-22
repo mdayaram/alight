@@ -54,7 +54,6 @@ manifest = <<MANIFEST
 Generated on #{Time.now.to_s}
 Against #{SHA}
 Output From Kindlegen:
-
 MANIFEST
 File.open(root_path("manifest.txt"), "w") { |f| f.write(manifest) }
 
