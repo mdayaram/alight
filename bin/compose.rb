@@ -1,8 +1,18 @@
 #!/usr/bin/env ruby
 
 require 'fileutils'
-require 'nokogiri'
 require 'pathname'
+
+if !`gem list`.include?("nokogiri")
+  puts "Could not find Nokogiri gem.  Attempting install."
+  if !system("gem install nokogiri")
+    puts "Failed to install Nokogiri gem."
+    puts "You might want to try to install it yourself."
+    exit 1
+  end
+end
+
+require 'nokogiri'
 
 ROOT_DIR = File.expand_path(File.join(File.dirname(__FILE__), ".."))
 CONTENT_DIR = File.expand_path(File.join(ROOT_DIR, "content"))
