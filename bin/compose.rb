@@ -4,21 +4,13 @@ require 'fileutils'
 require 'nokogiri'
 require 'pathname'
 
-CONTENT_DIR = File.expand_path(File.join(File.dirname(__FILE__), "..", "content"))
-OUTPUT_DIR = File.expand_path(File.join(File.dirname(__FILE__), "..", "output"))
-BIN_DIR = File.expand_path(File.join(File.dirname(__FILE__), "..", "bin"))
+ROOT_DIR = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+CONTENT_DIR = File.expand_path(File.join(ROOT_DIR, "content"))
+BIN_DIR = File.expand_path(File.join(ROOT_DIR, "bin"))
 
-def content_path(name)
-  File.join(CONTENT_DIR, name)
-end
-
-def output_path(name)
-  File.join(OUTPUT_DIR, name)
-end
-
-def bin_path(name)
-  File.join(BIN_DIR, name)
-end
+def root_path(name); File.join(ROOT_DIR, name); end
+def content_path(name); File.join(CONTENT_DIR, name); end
+def bin_path(name); File.join(BIN_DIR, name); end
 
 def parse(filename)
   Nokogiri::HTML(File.read filename) do |config|
@@ -53,18 +45,8 @@ filelist.each do |f|
   doc_body << "\n<!-- ENDING SECTION: #{title} -->\n"
 end
 
-# Clean up.
-FileUtils.rm_rf(OUTPUT_DIR)
-FileUtils.mkdir_p(OUTPUT_DIR)
-
-# Create soft link for assets.
-content_assets = Pathname.new content_path("assets")
-output_dir = Pathname.new OUTPUT_DIR
-relative_path = content_assets.relative_path_from output_dir
-FileUtils.ln_s(relative_path, output_path("assets"))
-
 # Write final HTML file.
-File.open(output_path("alight-book.html"), "w") { |f| f.write(html_doc.to_html) }
+File.open(root_path("index.html"), "w") { |f| f.write(html_doc.to_html) }
 
 # Generate MANIFEST file.
 SHA = `git log -n 1 --format="%h" -- #{CONTENT_DIR}`
@@ -74,7 +56,8 @@ Against #{SHA}
 Output From Kindlegen:
 
 MANIFEST
-File.open(output_path("manifest.txt"), "w") { |f| f.write(manifest) }
+File.open(root_path("manifest.txt"), "w") { |f| f.write(manifest) }
 
 # Generate Ebook
-system("#{bin_path("kindlegen")} #{output_path('alight-book.html')} >> #{output_path("manifest.txt")} 2>&1")
+system("#{bin_path("kindlegen")} #{root_path('index.html')} >> #{root_path("manifest.txt")} 2>&1")
+
