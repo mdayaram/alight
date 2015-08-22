@@ -1,8 +1,7 @@
-Generated on 2015-08-22 13:45:09 -0700
-Against 1f1509e
+Generated on 2015-08-22 14:09:41 -0700
+Against 300eb9c
 
 Output From Kindlegen:
-
 
 *************************************************************
  Amazon kindlegen(MAC OSX) V2.9 build 1028-0897292 
@@ -12,35 +11,15 @@ Output From Kindlegen:
 
 Info(prcgen):I1047: Added metadata dc:Title        "Acknowledgements and Table of Contents"
 Info(prcgen):I1002: Parsing files  0000002
-Warning(htmlprocessor):W28001: CSS style specified in content is not supported by Kindle readers. Removing the CSS property: 'max-width' in file: /Users/noj/Projects/alight/assets/stylesheets/style.css
 Info(prcgen):I1015: Building PRC file
 Info(prcgen):I1006: Resolving hyperlinks
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/Contributors.html#dchristina-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/zsadler-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/eshick-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/estewart-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/cperez-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/adiaz-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/shardwick-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/vmarco-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/dmouton-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/lroop-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/lwelsh-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/mfalley-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/cfrench-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/mmay-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/dchristina-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/jjohnson-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/crudzinski-bio
-Warning(prcgen):W14001: Hyperlink not resolved:  /Users/noj/Projects/alight/imanicezanne.tumblr.com
-Warning(prcgen):W14002: Some hyperlinks could not be resolved.
 Warning(prcgen):W14016: Cover not specified
 Info(prcgen):I1045: Computing UNICODE ranges used in the book
 Info(prcgen):I1046: Found UNICODE range: Basic Latin [20..7E]
 Info(prcgen):I1046: Found UNICODE range: Latin-1 Supplement [A0..FF]
 Info(prcgen):I1046: Found UNICODE range: General Punctuation - Windows 1252 [2013..2014]
 Info(prcgen):I1017: Building PRC file, record count:   0000069
-Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  38.80%
+Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  38.84%
 Info(prcgen):I1040: The document identifier is: "Acknowledgem-le_of_Contents"
 Info(prcgen):I1041: The file format version is V5
 Info(prcgen):I1031: Saving PRC file
@@ -50,9 +29,9 @@ Info(prcgen):I1007: Resolving mediaidlinks
 Info(prcgen):I1011: Writing mediaidlinks
 Info(prcgen):I1009: Resolving guide items
 Info(prcgen):I1017: Building PRC file, record count:   0000056
-Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  45.44%
+Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  45.61%
 Info(prcgen):I1041: The file format version is V8
 Info(prcgen):I1032: PRC built successfully
 Info(prcgen):I15000:  Approximate Standard Mobi Deliverable file size :   0000130KB
-Info(prcgen):I15001:  Approximate KF8 Deliverable file size :   0000125KB
+Info(prcgen):I15001:  Approximate KF8 Deliverable file size :   0000126KB
 Info(prcgen):I1037: Mobi file built with WARNINGS!
