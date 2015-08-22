@@ -1,5 +1,4 @@
-Generated on 2015-08-22 14:15:53 -0700
-Against 6cddd9c
+Generated against 6cddd9c
 
 Output From Kindlegen:
 
