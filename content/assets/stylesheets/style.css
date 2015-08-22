@@ -1,0 +1,32 @@
+.banner h1 {
+  padding: 40% 15%;
+  text-align: left;
+}
+
+.banner {
+  height: 800px;
+  width: 600px;
+}
+
+#front-matter {
+  height: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+#front-matter img {
+  display: inline-block;
+  margin: 5% auto;
+  padding: 0 10px;
+  max-width: 40%;
+}
+
+#copyright {
+  vertical-align: top;
+  width: 100%;
+}
+
+#ack {
+  width: 100%;
+  vertical-align: bottom;
+}
