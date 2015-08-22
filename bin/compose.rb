@@ -6,6 +6,7 @@ require 'pathname'
 
 CONTENT_DIR = File.expand_path(File.join(File.dirname(__FILE__), "..", "content"))
 OUTPUT_DIR = File.expand_path(File.join(File.dirname(__FILE__), "..", "output"))
+BIN_DIR = File.expand_path(File.join(File.dirname(__FILE__), "..", "bin"))
 
 def content_path(name)
   File.join(CONTENT_DIR, name)
@@ -13,6 +14,10 @@ end
 
 def output_path(name)
   File.join(OUTPUT_DIR, name)
+end
+
+def bin_path(name)
+  File.join(BIN_DIR, name)
 end
 
 def parse(filename)
@@ -66,6 +71,10 @@ SHA = `git log -n 1 --format="%h" -- #{CONTENT_DIR}`
 manifest = <<MANIFEST
 Generated on #{Time.now.to_s}
 Against #{SHA}
+Output From Kindlegen:
+
 MANIFEST
 File.open(output_path("manifest.txt"), "w") { |f| f.write(manifest) }
 
+# Generate Ebook
+system("#{bin_path("kindlegen")} #{output_path('alight-book.html')} >> #{output_path("manifest.txt")} 2>&1")
