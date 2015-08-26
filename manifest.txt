@@ -1,4 +1,4 @@
-Generated against 6cddd9c
+Generated against b80b993
 
 Output From Kindlegen:
 
@@ -10,7 +10,6 @@ Output From Kindlegen:
 
 Info(prcgen):I1047: Added metadata dc:Title        "Alight Anthology"
 Info(prcgen):I1002: Parsing files  0000002
-Info(prcgen):I1016: Building enhanced PRC file
 Info(prcgen):I1015: Building PRC file
 Info(prcgen):I1006: Resolving hyperlinks
 Warning(prcgen):W14016: Cover not specified
@@ -24,6 +23,7 @@ Info(prcgen):I1040: The document identifier is: "Alight_Anthology"
 Info(prcgen):I1041: The file format version is V5
 Info(prcgen):I1031: Saving PRC file
 Info(prcgen):I1033: PRC built with WARNINGS!
+Info(prcgen):I1016: Building enhanced PRC file
 Info(prcgen):I1007: Resolving mediaidlinks
 Info(prcgen):I1011: Writing mediaidlinks
 Info(prcgen):I1009: Resolving guide items
