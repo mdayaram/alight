@@ -4,18 +4,15 @@
 }
 
 .banner {
-  height: 800px;
-  width: 600px;
+	page-break-before: always;
 }
 
 #front-matter {
-  height: 800px;
   width: 100%;
   text-align: center;
 }
 
 #front-matter img {
-  display: inline-block;
   margin: 5% auto;
   padding: 0 10px;
 }
@@ -27,5 +24,8 @@
 
 #ack {
   width: 100%;
-  vertical-align: bottom;
+}
+
+.Section {
+	page-break-before: always;
 }
