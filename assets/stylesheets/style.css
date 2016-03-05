@@ -13,13 +13,16 @@
 }
 
 #front-matter {
+	height: auto;
 	width: 100%;
 	text-align: center;
 }
 
 #front-matter img {
-	margin: 5% auto;
+	display: inline-block;
+	margin: 7.5% auto 15%;
 	padding: 0 10px;
+	max-width: 40%;
 }
 
 #copyright {
