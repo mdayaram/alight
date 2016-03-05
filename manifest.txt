@@ -1,4 +1,4 @@
-Generated against 35c9b0b
+Generated against 1fe5160
 
 Output From Kindlegen:
 
@@ -27,7 +27,7 @@ Info(prcgen):I1007: Resolving mediaidlinks
 Info(prcgen):I1011: Writing mediaidlinks
 Info(prcgen):I1009: Resolving guide items
 Info(prcgen):I1017: Building PRC file, record count:   0000056
-Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  45.48%
+Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  45.47%
 Info(prcgen):I1041: The file format version is V8
 Info(prcgen):I15000:  Approximate Standard Mobi Deliverable file size :   0000247KB
 Info(prcgen):I15001:  Approximate KF8 Deliverable file size :   0000242KB
