@@ -25,15 +25,6 @@
 	max-width: 40%;
 }
 
-#copyright {
-	vertical-align: top;
-	width: 100%;
-}
-
-#ack {
-	width: 100%;
-}
-
 .Section {
 	page-break-before: always;
 }
