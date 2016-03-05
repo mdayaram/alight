@@ -1,4 +1,4 @@
-Generated against 41c404e
+Generated against 4d15511
 
 Output From Kindlegen:
 
@@ -17,8 +17,8 @@ Info(prcgen):I1045: Computing UNICODE ranges used in the book
 Info(prcgen):I1046: Found UNICODE range: Basic Latin [20..7E]
 Info(prcgen):I1046: Found UNICODE range: Latin-1 Supplement [A0..FF]
 Info(prcgen):I1046: Found UNICODE range: General Punctuation - Windows 1252 [2013..2014]
-Info(prcgen):I1017: Building PRC file, record count:   0000069
-Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  38.85%
+Info(prcgen):I1017: Building PRC file, record count:   0000070
+Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  38.93%
 Info(prcgen):I1040: The document identifier is: "Alight_Anthology"
 Info(prcgen):I1041: The file format version is V5
 Info(prcgen):I1031: Saving PRC file
@@ -27,8 +27,8 @@ Info(prcgen):I1007: Resolving mediaidlinks
 Info(prcgen):I1011: Writing mediaidlinks
 Info(prcgen):I1009: Resolving guide items
 Info(prcgen):I1017: Building PRC file, record count:   0000056
-Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  45.58%
+Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  45.46%
 Info(prcgen):I1041: The file format version is V8
-Info(prcgen):I15000:  Approximate Standard Mobi Deliverable file size :   0000245KB
-Info(prcgen):I15001:  Approximate KF8 Deliverable file size :   0000241KB
+Info(prcgen):I15000:  Approximate Standard Mobi Deliverable file size :   0000247KB
+Info(prcgen):I15001:  Approximate KF8 Deliverable file size :   0000242KB
 Info(prcgen):I1036: Mobi file built successfully
