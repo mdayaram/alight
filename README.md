@@ -2,7 +2,7 @@ Alight Anthology E-book
 =======================
 
 The purpose of this repo is to generate a single all-encompassing HTML file from
-the collection of poems founds in the `content` directory.
+the collection of poems found in the `content` directory.
 
 ## Running
 
@@ -20,10 +20,10 @@ in the root directory of the repo.
 
 The script first makes sure that you have the Nokogiri gem installed, and if you
 don't, it installs it for you.  If this step fails, the script will exit.  At
-this point you'll have to installed the gem yourself and then come back to the
+this point you'll have to install the gem yourself and then come back to the
 script.
 
-After the dependency check, the `compose.rb` script will read in the
+After the dependency check, the `compose.rb` script will read the
 `content/FrontMatter.html` file and create an internal Nokogiri HTML doc object
 from it.  This file is used as our basis for building the final `index.html`
 file.  All `<a>` tags are read and their `href` attributes are collected.
