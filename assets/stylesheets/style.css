@@ -1,14 +1,14 @@
 .banner h1 {
 	background-color: inherit;
-	padding: 50% 0;
+	padding: 40% 0;
 	text-align: center;
 }
 
 .banner {
 	page-break-before: always;
 	border: 3px dashed #a2a2b4;
-	height: 600px;
-	width: 600px;
+	height: 90%;
+	width: 90%;
 	margin: auto;
 }
 
