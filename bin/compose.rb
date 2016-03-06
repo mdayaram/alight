@@ -16,6 +16,7 @@ end
 require 'nokogiri'
 
 ROOT_DIR = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+ASSETS_DIR = File.expand_path(File.join(ROOT_DIR, "assets"))
 CONTENT_DIR = File.expand_path(File.join(ROOT_DIR, "content"))
 BIN_DIR = File.expand_path(File.join(ROOT_DIR, "bin"))
 
@@ -63,9 +64,13 @@ puts "Writing final HTML file as index.html"
 File.open(root_path("index.html"), "w") { |f| f.write(html_doc.to_html) }
 
 puts "Generating manifest file."
-SHA = `git log -n 1 --format="%h" -- #{CONTENT_DIR}`
+CONTENT_SHA = `git log -n 1 --format="%h" -- #{CONTENT_DIR}`.strip
+ASSETS_SHA = `git log -n 1 --format="%h" -- #{ASSETS_DIR}`.strip
 manifest = <<MANIFEST
-Generated against #{SHA}
+Generated against...
+  content@#{CONTENT_SHA}
+  assets@#{ASSETS_SHA}
+
 Output From Kindlegen:
 MANIFEST
 File.open(root_path("manifest.txt"), "w") { |f| f.write(manifest) }
