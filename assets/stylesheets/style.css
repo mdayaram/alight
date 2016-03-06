@@ -12,6 +12,7 @@
 	margin: auto;
 	padding-left: 10px;
 	padding-right: 10px;
+	vertical-align: middle;
 }
 
 #front-matter {
@@ -50,9 +51,10 @@ div.offset-s {
 .rush-x {
 	width: 100%;
 	margin-top: 2%;
-	height: 200px;
+	height: 50px;
 	background-image: url('../images/X.png');
 	background-repeat: repeat-x;
+	background-size: contain;
 }
 
 #toc-title {
