@@ -4,6 +4,17 @@ Alight Anthology E-book
 The purpose of this repo is to generate a single all-encompassing HTML file from
 the collection of poems found in the `content` directory.
 
+## Download/View
+
+The project is also pushed to Github Pages which allows you to view these
+files on the web.  You can find the ebook and html versions of the book in
+the following links:
+
+```
+HTML:  http://noj.cc/alight/index.html
+EBOOK: http://noj.cc/alight/index.mobi
+```
+
 ## Running
 
 You will need Ruby 1.9.3 or higher to be able to run this script.
