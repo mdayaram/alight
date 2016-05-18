@@ -1,0 +1,36 @@
+Generated against...
+  content@a824633
+  assets@f3a5f85
+
+Output From Kindlegen:
+
+*************************************************************
+ Amazon kindlegen(MAC OSX) V2.9 build 1028-0897292 
+ A command line e-book compiler 
+ Copyright Amazon.com and its Affiliates 2014 
+*************************************************************
+
+Info(prcgen):I1047: Added metadata dc:Title        "Alight Anthology"
+Info(prcgen):I1002: Parsing files  0000002
+Info(prcgen):I1015: Building PRC file
+Info(prcgen):I1006: Resolving hyperlinks
+Info(prcgen):I1045: Computing UNICODE ranges used in the book
+Info(prcgen):I1046: Found UNICODE range: Basic Latin [20..7E]
+Info(prcgen):I1046: Found UNICODE range: Latin-1 Supplement [A0..FF]
+Info(prcgen):I1046: Found UNICODE range: General Punctuation - Windows 1252 [2013..2014]
+Info(prcgen):I1017: Building PRC file, record count:   0000070
+Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  38.95%
+Info(prcgen):I1040: The document identifier is: "Alight_Anthology"
+Info(prcgen):I1041: The file format version is V5
+Info(prcgen):I1031: Saving PRC file
+Info(prcgen):I1032: PRC built successfully
+Info(prcgen):I1016: Building enhanced PRC file
+Info(prcgen):I1007: Resolving mediaidlinks
+Info(prcgen):I1011: Writing mediaidlinks
+Info(prcgen):I1009: Resolving guide items
+Info(prcgen):I1017: Building PRC file, record count:   0000056
+Info(prcgen):I1039: Final stats - text compressed to (in % of original size):  45.44%
+Info(prcgen):I1041: The file format version is V8
+Info(prcgen):I15000:  Approximate Standard Mobi Deliverable file size :   0000247KB
+Info(prcgen):I15001:  Approximate KF8 Deliverable file size :   0000242KB
+Info(prcgen):I1036: Mobi file built successfully
