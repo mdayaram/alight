@@ -6,7 +6,7 @@
 
 .banner {
 	page-break-before: always;
-	border: 3px dashed #a2a2b4;
+	border: 3px solid #a2a2b4;
 	height: 90%;
 	width: 90%;
 	margin: auto;
