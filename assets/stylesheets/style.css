@@ -21,6 +21,10 @@
 	text-align: center;
 }
 
+#front-matter h1, #front-matter h2 {
+	background-color: inherit;
+}
+
 #front-matter img {
 	display: inline-block;
 	margin: 7.5% auto 15%;
