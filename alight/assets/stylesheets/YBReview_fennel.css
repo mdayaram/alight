@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* CSS Document */
+/* for Amazon KF8 only */
+
+h1, h2, h3, h4, h5, h6 {
+	/* I want all headings to share a font-family.
+	My h's will differ in most other ways, so I'll
+	only define a font-family here generally. */
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+	font-size: 200%;
+	background-color: #a2a2b4;
+	text-align: left;
+}
+
+h2 {
+	font-size: 175%;
+	background-color: #CCC;
+	text-align: left;
+}
+
+h3 {
+	font-size: 150%;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 125%;
+	font-style: italic;
+	color: #CCC;
+	text-align: right;
+	line-height: 200%;
+}
+
+h5 {
+	font-size: 115%;
+}
+
+/* These classes are MS Word junk, so I'll delete them soon.
+a:link, span.MsoHyperlink {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:visited, span.MsoHyperlinkFollowed {
+	color: purple;
+	text-decoration: underline;
+}
+*/
+
+p.PoemLine, li.PoemLine, div.PoemLine,
+p.PoemLineIndent1, li.PoemLineIndent1, div.PoemLineIndent1,
+p.PoemLineIndent2, li.PoemLineIndent2, div.PoemLineIndent2,
+p.PoemLineRightJ, li.PoemLineRightJ, div.PoemLineRightJ,
+p.PoemLineCenter, li.PoemLineCenter, div.PoemLineCenter {
+/* I can group all of these PoemLine styles together, because
+all of my PoemLine classes use the same font-family etc. The
+only difference among PoemLineXYZ classes is the padding-left
+and text-align */
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-indent: -3%;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: normal;
+}
+
+p.PoemLine, li.PoemLine, div.PoemLine {
+	padding-left: 3%;
+	text-align: left;
+}
+
+p.PoemLineIndent1, li.PoemLineIndent1, div.PoemLineIndent1 {
+	padding-left: 6%;
+	text-align: left;
+}
+
+p.PoemLineIndent2, li.PoemLineIndent2, div.PoemLineIndent2 {
+	padding-left: 9%;
+	text-align: left;
+}
+
+p.PoemLineRightJ, li.PoemLineRightJ, div.PoemLineRightJ {
+	padding-left: 0;
+	text-align: right;
+	/* In practice, it's rare for right justified lines to be very long
+	But just in case, they should still have a hanging LEFT indent
+	in left-to-right languages. So, same text-indent as others */
+}
+
+p.PoemLineCenter, li.PoemLineCenter, div.PoemLineCenter {
+	padding-left: 0;
+	text-align: center;
+}
+
+/* The Line1 classes are for the first line of each stanza, in mobi7 format. In KF8 and EPUB, the Line1 classes are EXACTLY the same as their corresponding Line classes. Mobi7 ignores margin-top attribute at <div> level, so for stanzas to stand on their own with good stanza spacing in Mobi7 I need to put the margin-top on the first line of each stanza. */
+
+p.PoemLine1, li.PoemLine1, div.PoemLine1,
+p.PoemLine1Indent1, li.PoemLine1Indent1, div.PoemLine1Indent1,
+p.PoemLine1Indent2, li.PoemLine1Indent2, div.PoemLine1Indent2,
+p.PoemLine1RightJ, li.PoemLine1RightJ, div.PoemLine1RightJ,
+p.PoemLine1Center, li.PoemLine1Center, div.PoemLine1Center {
+/* I can group all of these PoemLine1 styles together, because
+all of my PoemLine1 classes use the same font-family etc. The
+only difference among PoemLine1XYZ classes is the padding-left
+and text-align */
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-indent: -3%;
+	margin-top: 0%;
+	margin-bottom: 0;
+	line-height: normal;
+}
+
+p.PoemLine1, li.PoemLine1, div.PoemLine1 {
+	padding-left: 3%;
+	text-align: left;
+}
+
+p.PoemLine1Indent1, li.PoemLine1Indent1, div.PoemLine1Indent1 {
+	padding-left: 6%;
+	text-align: left;
+}
+
+p.PoemLine1Indent2, li.PoemLine1Indent2, div.PoemLine1Indent2 {
+	padding-left: 9%;
+	text-align: left;
+}
+
+p.PoemLine1RightJ, li.PoemLine1RightJ, div.PoemLine1RightJ {
+	padding-left: 0;
+	text-align: right;
+	/* In practice, it's rare for right justified lines to be very long
+	But just in case, they should still have a hanging LEFT indent
+	in left-to-right languages. So, same text-indent as others */
+}
+
+p.PoemLine1Center, li.PoemLine1Center, div.PoemLine1Center {
+	padding-left: 0;adding-left: 0%;
+	text-align: center;
+}
+
+/* The Stanza classes are for divs. They have the same attributes and values as the Line classes, except the Stanza classes have a margin-top of 2%. Wrap each stanza in a stanza div. When possible, do most or all of the indenting at div level. Individual lines that need more indentation can get .PoemLine classes for this. -AM */
+
+div.PoemStanza,
+div.PoemStanzaIndent1,
+div.PoemStanzaIndent2,
+div.PoemStanzaRightJ,
+div.PoemStanzaCenter,
+p.ContentsSection, div.ContentsSection {
+/* I can group all of these PoemStanza styles together, because
+all of my PoemStanza classes use the same font-family etc. The
+only difference among PoemStanzaXYZ classes is the padding-left
+and text-align */
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-indent: 0%;
+	margin-top: 1.25em;  /* this is the only change from regular .PoemLineXYZ */
+	margin-bottom: 0;
+	line-height: normal;
+}
+
+div.PoemStanza {
+	text-align: left;
+}
+
+div.PoemStanzaIndent1 {
+	padding-left: 3%;
+	text-align: left;
+}
+
+div.PoemStanzaIndent2 {
+	padding-left: 6%;
+	text-align: left;
+}
+
+div.PoemStanzaRightJ {
+	padding-left: 3%;
+	text-align: right;
+}
+
+div.PoemStanzaCenter {
+	padding-left: 0%;
+	text-align: center;
+}
+
+/* the following classes rarely, if ever, get into trouble regarding <div> or <p> tag arguments, so they can apply to p, li, and div elements. */
+
+p.ContentsSection, li.ContentsSection, div.ContentsSection {
+	padding-left: 0%;
+	text-align: left;
+	background-color: #CCC; /* helps this line read better in Table of Contents */
+}
+
+p.PoemDedication, li.PoemDedication, div.PoemDedication {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	font-style: italic;
+	color: #7F7F7F;
+	padding-left: 3%;
+	text-indent: -3%;
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: normal;
+}
+
+p.prose, li.prose, div.prose {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-align: justify;
+	text-indent: 0;
+	line-height: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p.ProseStanza, li.ProseStanza, div.ProseStanza {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-align: justify;
+	text-indent: 0;
+	line-height: normal;
+	margin-top: 2%;
+}
+
+p.ProseSection, li.ProseSection, div.ProseSection {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 100%;
+	text-align: justify;
+	text-indent: 0;
+	line-height: normal;
+	margin-top: 2%;
+	page-break-before: always; /* This is the only difference for .ProseSection over .ProseStanza */
+}
