@@ -1,0 +1,62 @@
+.banner h1 {
+	background-color: inherit;
+	padding: 40% 0;
+	text-align: center;
+}
+
+.banner {
+	page-break-before: always;
+	border: 3px dashed #a2a2b4;
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+#front-matter {
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+
+#front-matter img {
+	display: inline-block;
+	margin: 7.5% auto 15%;
+	padding: 0 10px;
+}
+
+.Section {
+	page-break-before: always;
+}
+
+.offset-s {
+	padding-left: 15% !important;
+	text-align: left;
+}
+
+div.offset-s {
+	margin-top: 1.25em;
+}
+
+.ContributorName {
+	font-weight: 600;
+}
+
+.toc a {
+	display: block;
+}
+
+.rush-x {
+	width: 100%;
+	margin-top: 2%;
+	height: 50px;
+	background-image: url('../images/X.png');
+	background-repeat: repeat-x;
+	background-size: contain;
+}
+
+#toc-title {
+	background-color: #fff;
+}
